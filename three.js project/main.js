@@ -202,7 +202,8 @@ function simpleObjectsLayout() {
 function htmlElement(table, i) {
     let element = document.createElement('div');
     element.className = 'element';
-    element.style.backgroundColor = 'rgba(' + Math.random() * 127. + ',' + Math.random() * 127 + ',' + Math.random() * 127 + ',' + (Math.random() * 0.5 + 0.25) + ')';
+    element.style.backgroundColor = 'rgba(0,127,127,' + (Math.random() * 0.5 + 0.25) + ')';
+
     let number = document.createElement('div');
     number.className = 'number';
     number.textContent = (i / 5) + 1;
@@ -218,7 +219,7 @@ function htmlElement(table, i) {
     details.innerHTML = table[i + 1] + '<br>' + table[i + 2];
     element.appendChild(details);
 
-    element.addEventListener('click', () => elementClickHandler(i), false);
+    element.addEventListener('click', ()=>elementClickHandler(i), false);
 
     return element;
 }
