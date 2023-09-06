@@ -121,7 +121,7 @@ const table = [
 
 let camera, scene, renderer, controls, composer;
 var hblur, vblur;
-let targets = { simple: [], table: [], sphere: [], helix: [], grid: [] };
+let targets = { simple: [], table: [], sphere: [], helix: [], grid: [] , cone:[]};
 
 init();
 animate();
