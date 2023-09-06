@@ -179,6 +179,7 @@ function addClickListeners() {
     addClickListener(targets.sphere, 'sphere');
     addClickListener(targets.helix, 'helix');
     addClickListener(targets.grid, 'grid');
+    addClickListener(targets.grid, 'cone');
 
 }
 
