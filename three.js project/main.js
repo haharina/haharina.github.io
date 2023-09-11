@@ -203,8 +203,11 @@ function simpleObjectsLayout() {
 function htmlElement(table, i) {
     let element = document.createElement('div');
     element.className = 'element';
-    element.style.backgroundColor = 'rgba(20,119,147,' + (Math.random() * 0.5 + 0.25) + ')';
-    
+    if(table[i]=='F'){
+        element.style.backgroundColor = 'rgba(20,119,147,' + (Math.random() * 0.5 + 0.25) + ')';
+    }else{
+        element.style.backgroundColor = 'rgba(0,0,255,' + (Math.random() * 0.5 + 0.25) + ')';
+    }
     let number = document.createElement('div');
     number.className = 'number';
     number.textContent = (i / 5) + 1;
