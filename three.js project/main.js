@@ -336,7 +336,7 @@ function addConeObject(coneVector, index){
     const theta = index * 4 + Math.PI;
     const y = - (index*12) + 450;
     let object = new THREE.Object3D;
-
+    
     object.position.setFromCylindricalCoords(theta, y);
 
     coneVector.x = object.position.x * 2;
