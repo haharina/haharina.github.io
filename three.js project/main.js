@@ -204,10 +204,11 @@ function htmlElement(table, i) {
     let element = document.createElement('div');
     element.className = 'element';
     if(table[i]=='F'){
-        element.style.backgroundColor = 'rgba(20,119,147,' + (Math.random() * 0.5 + 0.25) + ')';
+        element.style.backgroundColor = 'rgba(255,20,147,' + (Math.random() * 0.5 + 0.25) + ')';
     }else{
         element.style.backgroundColor = 'rgba(0,0,255,' + (Math.random() * 0.5 + 0.25) + ')';
     }
+    
     let number = document.createElement('div');
     number.className = 'number';
     number.textContent = (i / 5) + 1;
@@ -336,7 +337,7 @@ function addConeObject(coneVector, index){
     const y = - (index*12) + 450;
     let object = new THREE.Object3D;
 
-    object.position.setFromCylindricalCoords(theta, y);
+    object.position.setFromCylindricalCoords(900, theta, y);
 
     coneVector.x = object.position.x * 2;
     coneVector.y = object.position.y;
