@@ -1,0 +1,170 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #efefef;
+  }
+   /* General reset */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1d6c64 0%, #1e6072 60%, #244c62 100%);
+}
+
+/* Container styling */
+.container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Form heading */
+.form-signin-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* Error and success alert styling */
+.alert {
+    display: none; /* Hidden initially */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.alert-visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+.alert .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group-addon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 40px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #1e6072;
+    box-shadow: 0 0 8px rgba(155, 89, 182, 0.2);
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #1e6072;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1d6c64;
+}
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .containers { max-width: 400px; width: 100%; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); text-align: center; }
+  .form-signin-headings { font-size: 24px; font-weight: 600; margin-bottom: 20px; color: #4a4a4a; }
+  .alerts { color: red; margin-bottom: 15px; padding: 10px; background-color: #f8d7da; border-left: 4px solid #dc3545; }
+  .input-groups { position: relative; margin-bottom: 20px; }
+  .input-group-addons { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #aaa; }
+  .form-controls { width: 100%; padding: 12px 40px; font-size: 16px; border: 1px solid #ddd; border-radius: 25px; outline: none; }
+  .form-controls:focus { border-color: #1e6072; box-shadow: 0 0 8px rgba(155, 89, 182, 0.2); }
+  .btn { width: 100%; padding: 12px; font-size: 18px; border-radius: 25px; cursor: pointer; transition: background-color 0.3s; }
+  .btn-primary { background-color: #1e6072; color: white; border: none; }
+  .btn-primary:hover { background-color: #1e6072; }
